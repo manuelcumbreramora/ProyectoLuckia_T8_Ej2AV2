@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Datos
+namespace Negocio
 {
-    public interface IDAO
+    public class Juego
     {
-        List<DTOJuego> recogeJuego();
+        public int ID { get; set; }
 
-        List<DTOOpciones_Juego> recogeOpciones();
+        public string Nombre { get; set; }
     }
 }
