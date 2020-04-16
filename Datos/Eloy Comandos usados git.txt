@@ -1,0 +1,261 @@
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+ MicrosoftEdgeBackups/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{7731319b-02b6-11ea-90b0-7cb27d5ca9d5}.TM.blf
+ NTUSER.DAT{7731319b-02b6-11ea-90b0-7cb27d5ca9d5}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{7731319b-02b6-11ea-90b0-7cb27d5ca9d5}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ OneDrive/
+ Pictures/
+ Plantillas@
+ pseint/
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+ Videos/
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 ~
+$ cd ..
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Users
+$ cd ..
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c
+$ cd Ejercicio2AdeRepo
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo
+$ Clone https://github.com/manuelcumbreramora/ProyectoLuckia_T8_Ej2AV2
+bash: Clone: command not found
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo
+$ git clone https://github.com/manuelcumbreramora/ProyectoLuckia_T8_Ej2AV2
+Cloning into 'ProyectoLuckia_T8_Ej2AV2'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (13/13), 6.49 KiB | 6.49 MiB/s, done.
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo
+$ ls -a
+./  ../  ProyectoLuckia_T8_Ej2AV2/
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo
+$ cd ProyectoLuckia_T8_Ej2AV2
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ ls -a
+./  ../  .git/  Ejercicio2Repo/  Ejercicio2Repo.sln
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git branch 'Rama Eloy'
+fatal: 'Rama Eloy' is not a valid branch name.
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git branch 'Eloy_Branch'
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git checkout Eloy_Branch
+Switched to branch 'Eloy_Branch'
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git log
+commit 3c261bfde3ce9cdcf05e67693b7daa922f3d94f9 (HEAD -> Eloy_Branch, origin/master, origin/HEAD, master)
+Author: manuelcumbreramora <58508423+manuelcumbreramora@users.noreply.github.com>
+Date:   Thu Apr 16 10:44:56 2020 +0200
+
+    Add files via upload
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git dif
+git: 'dif' is not a git command. See 'git --help'.
+
+The most similar commands are
+        diff
+        config
+        difftool
+        init
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git diff
+diff --git a/Ejercicio2Repo.sln b/Ejercicio2Repo.sln
+index 13b59eb..7e0e048 100644
+--- a/Ejercicio2Repo.sln
++++ b/Ejercicio2Repo.sln
+@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29509.3
+ MinimumVisualStudioVersion = 10.0.40219.1
+ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio2Repo", "Ejercicio2Repo\Ejercicio2Repo.csproj", "{A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}"
+ EndProject
++Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}"^M
++EndProject^M
+ Global
+        GlobalSection(SolutionConfigurationPlatforms) = preSolution
+                Debug|Any CPU = Debug|Any CPU
+@@ -15,6 +17,10 @@ Global
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Release|Any CPU.Build.0 = Release|Any CPU
++               {7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}.Debug|Any CPU.ActiveCfg =:...skipping...
+diff --git a/Ejercicio2Repo.sln b/Ejercicio2Repo.sln
+index 13b59eb..7e0e048 100644
+--- a/Ejercicio2Repo.sln
++++ b/Ejercicio2Repo.sln
+@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29509.3
+ MinimumVisualStudioVersion = 10.0.40219.1
+ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio2Repo", "Ejercicio2Repo\Ejercicio2Repo.csproj", "{A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}"
+ EndProject
++Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}"^M
++EndProject^M
+ Global
+        GlobalSection(SolutionConfigurationPlatforms) = preSolution
+                Debug|Any CPU = Debug|Any CPU
+@@ -15,6 +17,10 @@ Global
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {A09DCFAC-8FD9-48E3-A3B6-9FD685FD5DE4}.Release|Any CPU.Build.0 = Release|Any CPU
++               {7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU^M
++               {7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}.Debug|Any CPU.Build.0 = Debug|Any CPU^M
++               {7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}.Release|Any CPU.ActiveCfg = Release|Any CPU^M
++               {7A2BF006-DE9E-4AF9-8CBF-AE20FA4FB464}.Release|Any CPU.Build.0 = Release|Any CPU^M
+        EndGlobalSection
+        GlobalSection(SolutionProperties) = preSolution
+                HideSolutionNode = FALSE
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git add^C
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git add -A .
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git status
+On branch Eloy_Branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .vs/Ejercicio2Repo/v16/.suo
+        new file:   Datos/Class1.cs
+        new file:   Datos/Datos.csproj
+        new file:   Datos/Properties/AssemblyInfo.cs
+        new file:   Datos/obj/Debug/Datos.csprojAssemblyReference.cache
+        new file:   Datos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+        modified:   Ejercicio2Repo.sln
+
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git commit -m 'Creacion Proyecto Datos'
+[Eloy_Branch a7e1548] Creacion Proyecto Datos
+ 7 files changed, 108 insertions(+)
+ create mode 100644 .vs/Ejercicio2Repo/v16/.suo
+ create mode 100644 Datos/Class1.cs
+ create mode 100644 Datos/Datos.csproj
+ create mode 100644 Datos/Properties/AssemblyInfo.cs
+ create mode 100644 Datos/obj/Debug/Datos.csprojAssemblyReference.cache
+ create mode 100644 Datos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 741 bytes | 23.00 KiB/s, done.
+From https://github.com/manuelcumbreramora/ProyectoLuckia_T8_Ej2AV2
+   3c261bf..9c31f46  master     -> origin/master
+Updating 3c261bf..9c31f46
+Fast-forward
+ .gitignore | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 .gitignore
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git checkout Eloy_Branch
+Switched to branch 'Eloy_Branch'
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (master)
+$ git checkout Eloy_Branch
+Switched to branch 'Eloy_Branch'
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git merge
+fatal: No remote for the current branch.
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$ git merge master
+Merge made by the 'recursive' strategy.
+ .gitignore | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 .gitignore
+
+eloy.gonzalezbarreir@PLX300000000422 MINGW64 /c/Ejercicio2AdeRepo/ProyectoLuckia_T8_Ej2AV2 (Eloy_Branch)
+$
