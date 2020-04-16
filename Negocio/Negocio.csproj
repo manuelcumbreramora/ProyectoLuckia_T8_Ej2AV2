@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IFachadaNegocio.cs" />
+    <Compile Include="Juego.cs" />
+    <Compile Include="OpcionJuego.cs" />
     <Compile Include="FachadaNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
